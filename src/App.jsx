@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout";
 import Resources from "./components/resources";
+import PageTitle from "./components/pagetitle";
+
 
 function App() {
   return (
       <Layout>
+        <PageTitle title="ressursarkiv" />
         <Routes>
           <Route path="html" element={<Resources category="html" />} />
           <Route path="css" element={<Resources category="css" />} />
